@@ -1,8 +1,13 @@
 
 <div ng-controller="MainController">
-    <span>Good morning {{user}}</span>
-    <br>
-    <span>You have {{unreadCount()}} unread messages </span>
-    <br>
-    <a href="#/inbox">Inbox</a>
+    <div class="greeting-container">
+        <span>Good morning {{user}}</span>
+        <br>
+        <span>You have {{unreadCount()}} unread messages </span>
+        <br>
+    </div>
+
+    <div class="buttons-container">
+        <a class="link-button" href="#/inbox">Inbox</a>
+    </div>
 </div>

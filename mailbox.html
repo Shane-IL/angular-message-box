@@ -10,14 +10,14 @@
 </head>
 <body ng-app="MailBoxApp">
     <div class="header">
-        <div class="container">
+        <div class="main-panel">
             <h1>Your Mailbox</h1>
+            <div class="panel-container">
+                <ng-view></ng-view>
+            </div>
         </div>
     </div>
 
-    <div class="panel-container">
-        <ng-view></ng-view>
-    </div>
 
     <script src="js/app.js"></script>
     <script src="js/model/messages-model.js"></script>

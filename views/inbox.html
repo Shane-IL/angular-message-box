@@ -3,15 +3,15 @@
         <h2>Inbox</h2>
         <div class="messages-container">
             <div class="message-item" ng-repeat="message in messages">
-                <a href="#/inbox/{{$index}}"  ng-click="markRead($index)" ng-class="getReadStatus(message)">
-                    <h2 class="message-topic">{{message.topic}}</h2>
+                <a href="#/inbox/{{$index}}"  ng-click="markRead($index)" ng-class="getReadStatus(message)" class="message-preview">
+                    <span class="message-preview-topic">{{message.topic}}</span>
                     <br>
-                    <span class="message-sender">from: {{message.sender}}</span>
+                    <span class="message-preview-sender">From: {{message.sender}}</span>
                     <br>
-                    <span class="message-date">sent on:{{message.dateTime | date}}</span>
+                    <span class="message-preview-date">Sent on: {{message.dateTime | date : 'EEEE, MMMM d, y h:mm:ss a'}}</span>
                 </a>
             </div>
         </div>
-        <a class="home-link" href="#/main">Home</a>
+        <a class="link-button" href="#/main">Home</a>
     </div>
 </div>

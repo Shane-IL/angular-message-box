@@ -4,6 +4,6 @@ app.controller('InboxController', ['$scope', 'messagesManager', function($scope,
         return !message.isRead ? 'message-unread': 'message-read';
     };
     $scope.markRead = function (index) {
-        messagesManager.markRead(index);
+        messagesManager.markRead(index, true);
     };
 }]);
