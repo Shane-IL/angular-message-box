@@ -1,0 +1,17 @@
+<div class="inbox panel" ng-controller="InboxController">
+    <div class="content-container">
+        <h2>Inbox</h2>
+        <div class="messages-container">
+            <div class="message-item" ng-repeat="message in messages">
+                <a href="#/inbox/{{$index}}"  ng-click="markRead($index)" ng-class="getReadStatus(message)">
+                    <h2 class="message-topic">{{message.topic}}</h2>
+                    <br>
+                    <span class="message-sender">from: {{message.sender}}</span>
+                    <br>
+                    <span class="message-date">sent on:{{message.dateTime | date}}</span>
+                </a>
+            </div>
+        </div>
+        <a class="home-link" href="#/main">Home</a>
+    </div>
+</div>

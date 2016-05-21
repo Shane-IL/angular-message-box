@@ -1,0 +1,12 @@
+<div class="message"  ng-controller="MessageController">
+    <div class="message-container">
+        <div class="message-title">{{currentMessage.topic}}</div>
+        <div class="message-sender">From: {{currentMessage.sender}}</div>
+        <div class="message-date">Sent: {{currentMessage.dateTime|date}} </div>
+        <div class="meesage-content">{{currentMessage.content}}</div>
+        <p class="photo-pubdate"> </p>
+    </div>
+    <div class="operations-buttons-container">
+        <a class="back" href="#/inbox">Back to Inbox</a>
+    </div>
+</div>

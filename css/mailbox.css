@@ -1,0 +1,9 @@
+.message-read
+{
+    background-color: aqua;
+}
+
+.message-unread
+{
+    background-color: red;
+}
