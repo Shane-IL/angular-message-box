@@ -18,10 +18,6 @@ body{
     text-align: center;
 }
 
-.greeting-container{
-
-}
-
 .buttons-container{
     margin-top: 250px;
 }
@@ -58,7 +54,6 @@ body{
 
 .message-read
 {
-
     font-weight: 400;
 }
 
@@ -101,5 +96,4 @@ body{
 
 .message-content{
     margin-top: 20px;
-
 }

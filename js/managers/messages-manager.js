@@ -20,6 +20,10 @@ app.factory('messagesManager', ['Messages', function (Messages) {
             return unreadCount;
         },
 
+        getTotalCount: function(){
+          return Messages.length;
+        },
+
         markRead: function(index, bool){
             Messages[index].isRead = bool;
         }
